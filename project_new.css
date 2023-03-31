@@ -1,0 +1,298 @@
+*{
+    margin :0;
+    padding:0;
+    box-sizing: border-box;
+    list-style-type: none ;
+    text-decoration: none;
+    font-weight:450;
+}
+html{
+    
+    scroll-behavior: smooth;
+    font-size: 150%;
+    background-color: rgb(7, 22, 22);
+    color: azure;
+}
+body{
+    width:100rem;
+    max-width: 100%;
+    margin: auto;
+}
+/*header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  rgb(96, 97, 155);
+    color: gainsboro;
+    padding: 1rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index:10;
+}
+.logo-figure{
+    border:2px solid black;
+}
+.logo{
+    font-size: 2rem;
+}
+#menu-icon{
+    display: none;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+nav ul li{
+    padding: 0 1rem;
+    transition: all 0.3s;
+}
+nav ul li:hover{
+    background-color: rgb(65, 22, 22);
+}
+nav ul li a{
+    color: gainsboro;
+    font-weight: bolder;
+}
+/*body*/
+.first-section{
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.article1{
+    flex-basis: 50%;
+    padding-left: 10rem;
+    padding-left: 1rem;
+}
+.aside1{
+    flex-basis: 50%;
+}
+.article-head{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.article-body{
+    padding-top: 1rem;
+}
+.body-img{
+    width: 20rem;
+    height: 15rem;
+    border-radius: 2rem;
+}
+.second-section{
+    padding-top: 6rem;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+}
+.s2child1{
+    font-size: 1.5rem;
+}
+.s2div{
+    display: flex;
+    padding-top: 2rem;
+}
+.s2div img{
+    width: 200px;
+    height: 200px;
+}
+.card{
+    padding-left: 7rem;
+}
+.card p{
+    color: aquamarine;
+    font-size: 180%;
+}
+.card a{
+    background-color: aquamarine;
+    color: black;
+    padding: 6%;
+    border-radius: 6%;
+}
+.sec4{
+    padding-top: 5rem;
+    padding-left: 1rem;
+   
+}
+.sec4 h2{
+    color: aquamarine;
+}
+.sec4 p{
+    padding-top: 1rem;
+    font-style: italic;
+    padding-left: 6rem;
+    
+}
+.footer1{
+    margin-top: 3rem;
+    background-color:  rgb(96, 97, 155);
+    padding: 0.8rem;
+    margin-left: 0;
+    color: gainsboro;
+}
+.text{
+    margin-left: 0;
+    font-size: 2rem;
+}
+.footer1 a{
+    padding-left: 4rem;
+}
+.footer-end{
+    margin-left: 30rem;
+}
+.sec3{
+    padding-top: 5rem;
+}
+.sec3 h2{
+    padding-left: 2rem;
+}
+
+/* carousel */
+
+.slideshow-container {
+    position: relative;
+    margin: 0% 7%;
+  }
+ .mySlides {
+   display: none;
+ }
+ 
+ .gallery-img{
+     width:100%;
+ }
+ 
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   margin-top: -22px;
+   padding: 16px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+ 
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+ .prev{
+   left:0;
+   border-radius: 3px 0 0 3px;
+ }
+ 
+ .prev:hover, .next:hover {
+   background-color: rgba(0,0,0,0.8);
+ }
+ .numbertext {
+   color: #f2f2f2;
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+ }
+ 
+ .active{
+   display:block;
+ }
+ 
+ .fade {
+   animation-name: fade;
+   animation-duration: 1.5s;
+ }
+ 
+ @keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+/*responsive*/
+@media screen and (max-width:992px){
+    
+}
+@media screen and (max-width:768px){
+  html{
+    font-size: 100%;
+  } 
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+header{
+    flex-direction: column;
+}
+#menu-icon{
+    margin: 2rem 0;
+    display: block;
+}
+.first-section{
+    flex-direction: column;
+    font-size: 100%;
+}
+.aside1{
+    padding-top: 1rem;
+}    
+.s2div{
+    flex-direction: column;
+}
+.card p{
+    padding-top: 4rem;
+}
+.footer1 a{
+    padding-left: 2rem;
+  
+}
+.footer-end{
+    margin-left: 10rem;
+}
+.hidden{
+    display:none;
+}
+}
+@media screen and (max-width:600px){
+    html{
+        font-size: 100%;
+      }
+      nav ul{
+        padding-top: 2rem;
+        padding-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    header{
+        flex-direction: column;
+    }
+    .first-section{
+        flex-direction: column;
+        font-size: 100%;
+    }
+    .aside1{
+        padding-top: 1rem;
+    }
+    .hidden{
+        display:none;
+    }
+    .s2div{
+        flex-direction: column;
+    }
+    .card p{
+        padding-top: 4rem;
+    }
+    .footer1 a{
+        padding-left: 2rem;
+        
+    }
+    .footer-end{
+        margin-left: 10rem;
+    }
+}
